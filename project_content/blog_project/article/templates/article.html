@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+<ul class="nav navbar-nav">
+    <li class="active"><a href="/articles/all">Articles</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="col-md-8">
+    <h1>{{ article.title }}</h1>
+    <p>< Author >: {{ article.author.username }}</p>
+    <p style="word-break: break-all;">{{ article.content }}</p>
+
+    <h2>Comments</h2>
+
+    <!-- for -->
+    <p>< Author >: </p>
+    <p>Content of comment</p>
+    <!-- end for -->
+
+    <p><a href="#" class="btn btn-primary">Add Comment</a></p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,4 @@
+include requirements.txt
+include devskiller.json
+recursive-include blog_project/article/templates *
+recursive-include blog_project/account/templates *
